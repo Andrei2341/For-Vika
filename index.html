@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Для тебя</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav" aria-label="Главная навигация">
+        <a href="#top" class="brand">для тебя</a>
+        <div class="nav-links">
+          <a href="#gallery">моменты</a>
+          <a href="#letter">письмо</a>
+          <a href="#promise">обещание</a>
+        </div>
+      </nav>
+
+      <div class="hero-copy">
+        <p class="eyebrow">маленький сайт для твоего настроения</p>
+        <h1>Ты делаешь обычное красивым.</h1>
+        <p>
+          Я собрал здесь немного света, улыбок и слов, которые давно хотелось
+          сказать красиво.
+        </p>
+        <a class="hero-button" href="#letter" aria-label="Открыть письмо">
+          <span aria-hidden="true">♡</span>
+          открыть письмо
+        </a>
+      </div>
+
+      <a class="scroll-cue" href="#gallery" aria-label="Перейти к фотографиям">
+        <span></span>
+      </a>
+    </header>
+
+    <main>
+      <section class="intro section">
+        <p>
+          В тебе есть что-то редкое: спокойствие, которое хочется беречь, и
+          красота, от которой мир становится мягче.
+        </p>
+      </section>
+
+      <section class="gallery section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow">самые красивые фотографии</p>
+          <h2 id="gallery-title">Четыре причины улыбнуться</h2>
+        </div>
+
+        <div class="photo-grid">
+          <figure class="photo-card wide">
+            <img src="assets/photo-1.jpg" alt="Ее портрет на улице" />
+            <figcaption>милаааашка</figcaption>
+          </figure>
+          <figure class="photo-card tall">
+            <img src="assets/photo-3.jpg" alt="Ее селфи с поцелуями на лице" />
+            <figcaption>милота, от которой невозможно не улыбнуться</figcaption>
+          </figure>
+          <figure class="photo-card tall">
+            <img src="assets/photo-2.jpg" alt="Ее портрет в солнечный день" />
+            <figcaption>красотулькаааа</figcaption>
+          </figure>
+          <figure class="photo-card wide">
+            <img src="assets/photo-4.jpg" alt="Ее портрет в автобусе" />
+            <figcaption>улыбааашкааа</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="letter section" id="letter" aria-labelledby="letter-title">
+        <div class="letter-photo" aria-hidden="true">
+          <img src="assets/photo-1.jpg" alt="" />
+        </div>
+
+        <article class="letter-text">
+          <p class="eyebrow">если коротко</p>
+          <h2 id="letter-title">Ты очень особенная.</h2>
+          <p>
+            Мне нравится в тебе все, что у тебя есть
+          </p>
+          <p>
+            Этот сайт маленький, но в нем простая мысль: ты правда очень классная
+            . И я хочу, чтобы у тебя был уголок, куда можно зайти и
+            вспомнить, что тобой восхищаются.
+          </p>
+          <button class="heart-button" type="button">
+            <span aria-hidden="true">♡</span>
+            еще немного...
+          </button>
+        </article>
+      </section>
+
+      <section class="promise section" id="promise" aria-labelledby="promise-title">
+        <div class="section-heading">
+          <p class="eyebrow">обещание</p>
+          <h2 id="promise-title">Я буду тебя радовать.</h2>
+        </div>
+        <div class="promise-list">
+          <p>замечать твои маленькие радости</p>
+          <p>беречь твое настроение</p>
+          <p>смешить тебя в нужный момент</p>
+          <p>напоминать, какая ты красивая</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
